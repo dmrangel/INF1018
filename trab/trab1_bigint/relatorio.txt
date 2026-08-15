@@ -1,0 +1,43 @@
+Aluno 1: Davi_Rangel 2411930 3WB
+Aluno 2: Victor_Hugo_Brito 2421278 3WB
+
+Estratégia de testes e roteiro:
+
+1 - Pensamos em definir o menor número de variáveis possível para testar cada função, e então chamar cada uma para modificar o objeto do tipo BigInt.
+2 - Utilizamos a função exibe_bigint para exibir o valor final da variável do tipo BigInt res.
+3 - Testar sempre valores negativos é muito importante.
+4 - Pensar nas funções aritméticas de forma manual, como fazemos no papel, ajuda muito.
+5 - Utilizar outras funções para a criação de uma nova, big_sub utiliza big_comp2 e depois big_sum.
+
+O que funciona ou não funciona e observações:
+    big_val:
+        Inicialmente pensamos na dump como comparação, mas depois descobrimos que o funcionamento não era tão parecido.
+        Funcionando perfeitamente.
+
+    big_comp2:
+        Inicialmente esquecemos de somar 1 após realizar a inversão dos bits.
+        Funcionando perfeitamente.
+
+    big_sum:
+        Razoavelmente fácil.
+        Funcionando perfeitamente.
+
+    big_sub:
+        A mais fácil de todas (Se big_comp2 e big_sum estiverem funcionando perfeitamente).
+        Funcionando perfeitamente.
+
+    big_mul:
+        A função mais difícil de todas, demorou 3 dias pra ficar pronta.
+        Funcionando perfeitamente.
+
+    big_shl:
+        Um pouco menos difícil que big_mul. Inicialmente confundimos com big_sar.
+        Funcionando perfeitamente.
+
+    big_shr:
+        Implementada após big_sar, por big_sar ser mais fácil.
+        Funcionando perfeitamente.
+
+    big_sar:
+        Após implementar big_shl, foi bem fácil.
+        Funcionando perfeitamente.
